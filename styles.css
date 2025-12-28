@@ -13,8 +13,26 @@ body {
     min-height: 100vh;
 }
 
+#initial-window {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 228, 224);
+    padding: 70px;
+    border-radius: 30px;
+    width: 50vh;
+}
+
+label {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+input {
+    padding: 5px;
+}
+
 .container {
-    padding: 20px;
+    padding: 60px;
     background-color: rgb(252, 251, 251);
     border-radius: 10px;
     display: flex;
@@ -36,6 +54,17 @@ button {
     cursor: pointer;
 }
 
+.receiveNames {
+    background-color: rgb(175, 235, 253);
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.receiveNames:hover {
+    opacity: 0.7;
+}
+
 #rock:hover, #paper:hover, #scissors:hover {
     box-shadow: rgba(226, 5, 5, 0.616) 0px 48px 100px 0px;
     transform: translateY(-16px);
@@ -43,14 +72,17 @@ button {
 }
 
 #rock {
+    padding: 15px;
     background-color: rgb(130, 199, 231);
 }
 
 #paper {
+    padding: 15px;
     background-color: rgba(51, 145, 51, 0.466);
 }
 
 #scissors {
+    padding: 15px;
     background-color: rgba(184, 70, 70, 0.61);
 }
 
@@ -59,7 +91,7 @@ p {
     margin-bottom: 10px; 
 }
 
-.your-score span {
+.myScore span {
     color: rgba(247, 202, 5, 0.904);
 }
 

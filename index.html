@@ -10,20 +10,32 @@
 </head>
 
 <body>
-    <div class="container">
+    <div id="initial-window">
+        <label>Nome Player 1:</label>
+        <input id="nameOne" type="text" placeholder="Digite aqui o nome.">
+        <label>Nome Player 2:</label>
+        <input id="nameTwo" type="text" placeholder="Digite aqui o nome.">
+        <button id="goGame" class="receiveNames" onclick="catchNames()">Enviar</button>
+    </div>
+
+    <div id="theGame" class="container" style="display: none;">
         <h1>JokenGame</h1>
 
         <div class="buttons">
-            <button id="rock">&#x270A;</button>
-            <button id="paper">&#x270B;</button>
-            <button id="scissors">&#x270C;</button>
+            <button id="rock" onclick="playHuman('Pedra')">&#x270A;</button>
+            <button id="paper" onclick="playHuman('Papel')">&#x270B;</button>
+            <button id="scissors" onclick="playHuman('Tesoura')">&#x270C;</button>
         </div>
         <p class="result"></p>
 
-        <p class="your-score">Sua pontuação: <span>0</span></p>
-        <p class="machine-score">Pontuação da Maquina: <span>0</span></p>
+        <p class="myScore">0 <span id="human-score">0</span></p>
+        <p class="machine-score">0 <span id="machine-score">0</span></p>
+
+        <button id="backInitial" class="receiveNames">Voltar para Nomes</button>
 
     </div>
+
+    <script src="/script.js"></script>
 </body>
 
 </html>
