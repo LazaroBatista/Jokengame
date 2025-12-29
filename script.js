@@ -43,8 +43,6 @@ const playMachine = () => {
 }
 
 const playTheGame = (human, machine) => {
-    
-    console.log('Humano: ' + human + " Maquina: " + machine)
 
     if (human === machine) {
         result.innerHTML = `Escolhas iguais. Empate!`
