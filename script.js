@@ -16,7 +16,6 @@ const catchNames = () => {
 } else {
     player1Name = nameOne
     player2Name = nameTwo
-        document.getElementById("goGame").addEventListener("click", function () {
         document.getElementById("initial-window").style.display = "none";
         document.getElementById("theGame").style.display = "block";
 
@@ -25,7 +24,6 @@ const catchNames = () => {
 
         myScore = document.querySelector('#human-score')
         machineScore = document.querySelector('#machine-score')
-    })
 }
 }
 
